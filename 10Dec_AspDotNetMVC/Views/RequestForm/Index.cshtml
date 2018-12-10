@@ -1,0 +1,26 @@
+﻿@model List<_10Dec_AspDotNetMVC.Models.ViewRequestFormDetails>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table>
+
+    <tr><td><h1>Id</h1></td><td><h1>Name</h1></td></tr>>
+
+    @foreach (var ViewRequestFormDetails in Model)
+
+    {
+        <tr>
+
+            <td><h1>@ViewRequestFormDetails.Id</h1></td>
+
+            <td><h1>@ViewRequestFormDetails.Name</h1></td>
+
+        </tr>
+
+    }
+
+</table>
